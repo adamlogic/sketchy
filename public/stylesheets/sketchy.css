@@ -1,31 +1,47 @@
 /* background texture: http://www.flickr.com/photos/zooboing/4100044654/in/set-72157624157169304/ */
-body { background: url(/images/background.jpg); }
 
-body, input, select { 
-  font: 100%/1 chalkboard, "Comic Sans MS", sans-serif; 
-  color: #333;
+body > #sketch { 
+  margin: 0 auto; 
+  padding: 10px 20px;
+  width: 800px; 
+  background: url(/images/background.jpg);
+  border: 2px solid #ddd;
+  -webkit-box-shadow: 5px 5px 20px rgba(0,0,0,.6);
 }
 
-form {
+#sketch, #sketch input, #sketch select { 
+  font: 100%/1.2 chalkboard, "Comic Sans MS", sans-serif; 
+  color: #444;
+  text-shadow: -1px 0 1px rgba(0,0,0,.2);
+}
+
+#sketch div { padding: 0; }
+#sketch p   { margin-top: 0; }
+
+#sketch form {
   margin-bottom: 1em;
 }
 
-label { display: block; padding-bottom: 2px; }
+#sketch label { display: block; padding-bottom: 2px; }
 
-.field { margin: .5em 0; vertical-align: middle; }
-.buttons { margin: 1em 0; }
+#sketch .field { margin: .5em 0; vertical-align: middle; }
+#sketch .buttons { margin: 1em 0; }
 
-input, textarea, select {
+#sketch input, #sketch textarea, #sketch select {
   padding: 3px 5px;
   -webkit-appearance: none;
 }
 
-.box, input, select, hr {
+#sketch .box, #sketch input, #sketch select, #sketch hr {
   border-width: 3px;
   -webkit-border-image: url(/images/border.png) 3 stretch;
 }
 
-input[type=checkbox], input[type=radio] {
+#sketch .box {
+  padding: .5em;
+}
+
+#sketch input[type=checkbox], #sketch input[type=radio] {
   border-width: 0;
   padding: 0;
   margin: 0;
@@ -34,31 +50,41 @@ input[type=checkbox], input[type=radio] {
   vertical-align: middle;
 }
 
-input[type=checkbox] { background-image: url(/images/checkbox.png); }
-input[type=checkbox]:checked { background-image: url(/images/checkbox_checked.png); }
-input[type=radio] { background-image: url(/images/radio.png); }
-input[type=radio]:checked { background-image: url(/images/radio_selected.png); }
+#sketch input[type=checkbox] { background-image: url(/images/checkbox.png); }
+#sketch input[type=checkbox]:checked { background-image: url(/images/checkbox_checked.png); }
+#sketch input[type=radio] { background-image: url(/images/radio.png); }
+#sketch input[type=radio]:checked { background-image: url(/images/radio_selected.png); }
 
-hr { 
+#sketch hr { 
   clear: both;
   border-width: 0; 
   border-bottom-width: 3px;
 }
 
-input, select {
+#sketch input, #sketch select {
   background: transparent;
 }
 
-input[type=submit], button {
+#sketch input[type=submit], #sketch button {
   padding: 3px 8px;
   -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.5);
   cursor: pointer;
 }
 
-select {
+#sketch select {
   padding-right: 30px;
   background: url(/images/select_arrow.png) 100% 50% no-repeat;
 }
 
-.left { float: left; width: 45%; margin-right: 3%; padding: .5em; }
-.right { float: right; width: 45%; margin-left: 3%; padding: .5em; }
+#sketch .left { float: left; width: 48%; }
+#sketch .right { float: right; width: 48%; }
+#sketch .alignright { text-align: right; }
+
+#sketch .split-2:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+

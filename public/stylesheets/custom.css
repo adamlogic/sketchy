@@ -1,6 +1,0 @@
-#site { margin: 0 auto; width: 850px; }
-
-#header { position: relative; }
-#header h2 { margin: 0; }
-#header .nav { position: absolute; right: 0; bottom: 0; }
-#header .nav a { margin-left: .6em; }

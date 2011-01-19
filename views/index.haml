@@ -3,23 +3,26 @@
   %meta{:charset => "utf-8"}
   %title Sketchy Demo
   %link{:href => "stylesheets/sketchy.css", :rel => "stylesheet", :type => "text/css"}
-  %link{:href => "stylesheets/custom.css", :rel => "stylesheet", :type => "text/css"}
 
 %body
-  #site
-    #header
-      %h2 Site Title
-      .nav
-        %a{:href => "#"} some
-        %a{:href => "#"} nav
-        %a{:href => "#"} links
+  #sketch
+    .right.alignright
+      %a{:href => "#"} some
+      %a{:href => "#"} nav
+      %a{:href => "#"} links
+
+    %strong Site Title
 
     %hr
 
-    #main
-      %h1 Page Title
+    %h1 Page Title
 
-      %form.box.right
+    .left
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+    .right
+      %form.box
         .field
           %label First name
           %input{:type => "text", :value => "some text"}
@@ -45,11 +48,7 @@
         .buttons
           %input{:type => "submit", :value => "Press Me!"}
 
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
     %hr
 
-    #footer
-      %span.legalese &copy;2010 Adam McCrea, All Rights Reserved.
+    %small &copy;2010 Adam McCrea
 
