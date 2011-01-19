@@ -1,0 +1,30 @@
+body { color: #333; background: url(/images/background.jpg); }
+
+body, input, select { font: 100%/1 chalkboard, "comic sans", sans-serif; }
+
+input, textarea, select {
+  padding: 3px 5px;
+  -webkit-appearance: none;
+}
+
+input, select, hr {
+  border-width: 3px;
+  -webkit-border-image: url(/images/border.png) 3 stretch;
+}
+
+hr { border-width: 0; border-bottom-width: 3px; }
+
+input, select {
+  background: transparent;
+}
+
+input[type=submit], button {
+  padding: 3px 8px;
+  -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+  cursor: pointer;
+}
+
+select {
+  padding-right: 30px;
+  background: url(/images/select_arrow.png) 100% 50% no-repeat;
+}
