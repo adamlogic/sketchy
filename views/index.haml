@@ -1,0 +1,55 @@
+!!!
+%head
+  %meta{:charset => "utf-8"}
+  %title Sketchy Demo
+  %link{:href => "stylesheets/sketchy.css", :rel => "stylesheet", :type => "text/css"}
+  %link{:href => "stylesheets/custom.css", :rel => "stylesheet", :type => "text/css"}
+
+%body
+  #site
+    #header
+      %h2 Site Title
+      .nav
+        %a{:href => "#"} some
+        %a{:href => "#"} nav
+        %a{:href => "#"} links
+
+    %hr
+
+    #main
+      %h1 Page Title
+
+      %form.box.right
+        .field
+          %label First name
+          %input{:type => "text", :value => "some text"}
+        .field
+          %label Select list
+          %select
+            %option Option 1
+            %option Option 2
+        .field
+          %label
+            %input{:type => "checkbox"}
+            Check this
+          %label
+            %input{:checked => "", :type => "checkbox"}
+            I'm checked
+        .field
+          %label
+            %input{:name => "set1", :type => "radio"}
+            Choose me
+          %label
+            %input{:checked => "", :name => "set1", :type => "radio"}
+            The chosen one
+        .buttons
+          %input{:type => "submit", :value => "Press Me!"}
+
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+    %hr
+
+    #footer
+      %span.legalese &copy;2010 Adam McCrea, All Rights Reserved.
+

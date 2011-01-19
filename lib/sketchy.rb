@@ -7,6 +7,7 @@ class Sketchy < Sinatra::Base
   end
 
   get '/:page' do |page|
-    erb page.to_sym
+    haml page.to_sym
   end
+
 end
