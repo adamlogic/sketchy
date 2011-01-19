@@ -8,7 +8,9 @@
   #sketch
     .right.alignright
       %a{:href => "#"} some
+      |
       %a{:href => "#"} nav
+      |
       %a{:href => "#"} links
 
     %strong Site Title
@@ -23,29 +25,29 @@
 
     .right
       %form.box
-        .field
+        %p
           %label First name
           %input{:type => "text", :value => "some text"}
-        .field
+        %p
           %label Select list
           %select
             %option Option 1
             %option Option 2
-        .field
+        %p
           %label
             %input{:type => "checkbox"}
             Check this
           %label
             %input{:checked => "", :type => "checkbox"}
             I'm checked
-        .field
+        %p
           %label
             %input{:name => "set1", :type => "radio"}
             Choose me
           %label
             %input{:checked => "", :name => "set1", :type => "radio"}
             The chosen one
-        .buttons
+        %p
           %input{:type => "submit", :value => "Press Me!"}
 
     %hr
