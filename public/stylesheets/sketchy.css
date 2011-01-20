@@ -29,7 +29,6 @@ body > #sketch {
 #sketch p   { margin-top: 0; }
 
 #sketch hr { 
-  border-width: 3px;
   -webkit-border-image: url(/images/border.png) 3 stretch;
   clear: both;
   border-width: 0; 
@@ -77,4 +76,18 @@ body > #sketch {
   padding: 3px 8px;
   -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.5);
   cursor: pointer;
+}
+
+
+/******* TABLES ************/
+
+#sketch table { 
+  width: 100%; 
+  margin-bottom: 1em;
+  border: 1px solid rgba(0,0,0,.1);
+}
+#sketch th { text-align: left; }
+#sketch td, #sketch th {
+  padding: 2px 5px;
+  border: 1px solid rgba(0,0,0,.1);
 }
